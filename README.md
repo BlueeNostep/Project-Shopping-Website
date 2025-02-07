@@ -24,6 +24,9 @@ c.คำสั่ง build project และ run
 
 1.ติดตั้ง package
 ```
+cd Project-Shopping-Website-main
+```
+```
 npm install
 ```
 ```
