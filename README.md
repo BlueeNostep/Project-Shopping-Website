@@ -21,11 +21,11 @@ b.การตั้งค่าฐานข้อมูล
 
 c.คำสั่ง build project และ run
 ```
-1.npm install
+npm install
 ```
 ```
-1.1 npm i 
+npm i 
 ```
 ```
-2.node server.js
+node server.js
 ```
