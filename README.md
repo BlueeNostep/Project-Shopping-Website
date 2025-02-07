@@ -20,12 +20,18 @@ b.การตั้งค่าฐานข้อมูล
 ```
 
 c.คำสั่ง build project และ run
+1.ติดตั้ง package
 ```
 npm install
 ```
 ```
 npm i 
 ```
+2.เปิดใช้งาน server
 ```
 node server.js
+```
+3.เปิดเว็บไซต์
+```
+http://localhost:3000
 ```
