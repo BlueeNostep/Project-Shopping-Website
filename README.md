@@ -20,6 +20,8 @@ b.การตั้งค่าฐานข้อมูล
 ```
 
 c.คำสั่ง build project และ run
+
+
 1.ติดตั้ง package
 ```
 npm install
