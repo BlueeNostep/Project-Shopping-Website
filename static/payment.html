@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="payment-container">
+        <button class="back" id="back" type="click"><span>ย้อนกลับ</span></button>   
+        <div class="payment-header">
+            
+            <h2>ชำระเงิน</h2>
+        </div>
+        <div class="details">
+            
+            <p><strong>ยอดชำระเงินทั้งหมด:</strong> <span id="total-amount">0 บาท</span></p>
+            <p><strong>เลขคำสั่งซื้อ:</strong> <span id="transid">xx-xxxxx-xxx</span></p>
+            <p><strong>เวลาที่เหลือ:</strong></p>
+            <p2 id="countdown"><strong>60:00</strong></p2>
+        </div>
+        <div class="logoqr-container">
+            <img src="logoqr.png" alt="QR PromptPay">
+        </div>
+        <div class="qr-container">
+    
+            <img src="imgs/b77de99e-308f-4b00-ab0e-d565a811e953.jpg">
+        </div>
+        <p class="namepayment">ชื่อบัญชี นายธีรชัย เถื่อนเหลือ</p>
+        <p class="description">ใช้สำหรับซื้อสินค้าบนเว็บไซต์นี้เท่านั้น</p>
+        <button class="btn-pay" id="btn-pay" type="click">ชำระเงิน</button>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

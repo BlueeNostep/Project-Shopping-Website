@@ -1,0 +1,153 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3994e3, #7af3f7);
+}
+.container {
+    width: 60vw;
+    max-width: 60vw;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0% 10%  0% 10%;
+}
+.container h3 {
+    
+    font-size: 18px;
+    padding: 0% 10%  0% 10%;
+}
+.info-row {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0% 10%  0% 10%;
+    
+}
+
+.info-row input {
+    background-color: #00000019;
+    width: 48%;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #2bb4da;
+    border-radius: 5px;
+}
+.product-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px;
+    margin-bottom: 20px; 
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-details img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#productlist  {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.productlist  {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product-name h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.product-name .description {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    margin: auto 100px auto auto;
+}
+
+.product-name .price {
+    text-align: right;
+    font-size: 20px; 
+    color: rgb(253, 0, 0);
+    margin: auto 90px auto auto;
+}
+.price {
+    text-align: right;
+    font-size: 20px; 
+    color: rgb(255, 2, 2);
+    margin: auto 100px auto 100px;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.actions button {
+    width: 30%;
+    padding: 10px;
+    margin: 0% 10% 0% 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cancel-btn {
+    background-color: #ccc;
+    padding: 0% 10%  0% 10%;
+}
+.pay-btn {
+    background-color: #a51909;
+    color: #fff;
+
+}
+.pay-btn:hover {
+    background-color: #d9534f;
+}
+.cancel-btn:hover {
+    background-color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .info-row input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .actions button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

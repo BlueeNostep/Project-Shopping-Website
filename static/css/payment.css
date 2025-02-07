@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background: linear-gradient(to right, #378aff, #7af5f7);
+    margin: 0;
+    padding: 0;
+
+}
+.payment-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.back {
+    display: block;
+    width: 20%;
+    background-color: rgb(236, 226, 226);
+    color: #000000;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.back:hover {
+    background-color: #5b4f4f;
+    color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    
+}
+.payment-container .details {
+    display: grid;
+    padding: 0px;
+    gap: 5px;
+  }
+.payment-container .details p:nth-child(odd) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px 0px 0px 0px;
+  }
+  
+.payment-container .details p:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto 0 auto auto;
+}
+
+.payment-container .details p2{
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.logoqr-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.qr-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logoqr-container img {
+    width: 100px;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+}
+
+.qr-container img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.namepayment{
+    text-align: center;
+}
+.description {
+    text-align: center;
+    color: #ff0800;
+}
+.btn-pay {
+    display: block;
+    width: 100%;
+    background-color: rgb(171, 38, 34);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-pay:hover {
+    background-color: #bd322d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    
+}
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #378aff, #7af5f7); /* เปลี่ยนทิศทางสี */
+        padding: 10px;
+    }
+    .payment-container {
+        max-width: 100%; 
+        margin: 20px auto; 
+        box-shadow: none;
+    }
+
+    .logoqr-container img {
+        width: 80px; 
+    }
+
+    .qr-container img {
+        width: 150px; 
+    }
+
+    .payment-header h2 {
+        font-size: 18px; 
+    }
+
+    .payment-container .details p:nth-child(odd),
+    .payment-container .details p:nth-child(even) {
+        font-size: 12px; 
+    }
+
+    .btn-pay {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .back {
+        width: 30%; 
+        font-size: 10px;
+    }
+}

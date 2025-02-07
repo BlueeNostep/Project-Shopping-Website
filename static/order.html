@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><strong>สรุปคำสั่งซื้อ</strong></h2>
+        <h3><strong>ที่อยู่</strong></h3>
+        
+        <div class="info-row">
+            <input id="fullname" type="text" name="fullname" placeholder="ชื่อ - นามสกุล">
+            <input id="phone" type="number" name="numberphone" placeholder="เบอร์โทรศัพท์">
+        </div>
+        <div class="info-row">
+            <input id="address" type="text" name="address" placeholder="ที่อยู่">
+        </div>
+        <div class="info-row">
+            <input id="zipcode" type="number" name="number" placeholder="รหัสไปรษณีย์">    
+        </div>
+        
+        <!-- <div id="order-summary">
+            <p><strong>ราคาสินค้า: </strong><span id="product-price"> บาท</span></p>
+            <p><strong>ค่าจัดส่ง: </strong><span id="shipping-price"> บาท</span></p>
+            <p><strong>ค่าธรรมเนียม VAT (7%): </strong><span id="vat-price"> บาท</span></p>
+            <p><strong>ราคารวมทั้งหมด: </strong><span id="total-price"> บาท</span></p>
+        </div> -->
+        <div id="modalCart" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+            <div class="modal-page">
+                <div class="t1">
+                    <h2>My cart</h2>
+                    <div class="btn-control">
+                        <button onclick="closeModal()" class="btn">
+                            ปิดตะกร้า
+                        </button>
+                        <button  onclick="buynow()" class="btn btn-buy">
+                            ยืนยันการสั่งซื้อ
+                            <!-- <a href="order.html" style="color: white;">ยืนยันการสั่งซื้อ</a> -->
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div id="mycart" class="cartlist">
+                    
+                </div>
+                
+            </div>
+        </div>
+       
+        <div class="actions" >
+            <button class="cancel-btn"  id="cancel-btn" type="click">ยกเลิกคำสั่งซื้อ</button>
+            <button class="pay-btn" id="pay-btn"  type="click"  >ชำระเงิน</button>
+        </div>
+    </div>
+    <script src="order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
